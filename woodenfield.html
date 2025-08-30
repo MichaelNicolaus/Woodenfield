@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>WoodenFielld</title>
-  <link rel="stylesheet" href="burn.css" />
+  <link rel="stylesheet" href="woodenfield.css" />
 </head>
 <body>
 
@@ -42,4 +42,55 @@
     <!-- Produk dengan Tab -->
     <section id="produk">
       <h2>Katalog Produk</h2>
-      <div class="t
+      <div class="tabs">
+        <button class="tab-btn active" onclick="showMainTab('kayu')">Kayu</button>
+        <button class="tab-btn" onclick="showMainTab('material')">Material Lain</button>
+      </div>
+
+      <!-- Tab Konten -->
+      <div id="kayu" class="main-tab">
+        <h3>Jenis Kayu</h3>
+        <button class="sub-btn active" onclick="showSubTab('jati')">Jati</button>
+        <button class="sub-btn" onclick="showSubTab('merbau')">Merbau</button>
+        <button class="sub-btn" onclick="showSubTab('mahoni')">Mahoni</button>
+
+        <div id="jati" class="sub-tab" style="display:block;">
+          <p>Kayu Jati: terkenal kuat, tahan lama, cocok untuk furnitur.</p>
+        </div>
+        <div id="merbau" class="sub-tab">
+          <p>Kayu Merbau: tahan rayap, ideal untuk lantai dan kusen.</p>
+        </div>
+        <div id="mahoni" class="sub-tab">
+          <p>Kayu Mahoni: ringan dan indah, sering digunakan untuk interior.</p>
+        </div>
+      </div>
+
+      <div id="material" class="main-tab" style="display:none;">
+        <h3>Material Lain</h3>
+        <p>Semen, cat kayu, paku, dan perlengkapan pendukung lainnya.</p>
+      </div>
+    </section>
+
+    <!-- Bantuan -->
+    <section id="bantuan">
+      <h2>Bantuan</h2>
+      <p>Hubungi tim WoodenFielld untuk informasi lebih lanjut.</p>
+    </section>
+
+    <!-- Chat -->
+    <section id="chat">
+      <h2>Chat Bot</h2>
+      <p>Gunakan chatbot kami untuk bertanya seputar produk dan layanan.</p>
+    </section>
+
+    <!-- Kontak -->
+    <section id="kontak">
+      <h2>Kontak</h2>
+      <p>Telepon: 085219577718</p>
+      <p>Email: <a href="mailto:harddevice516@gmail.com">harddevice516@gmail.com</a></p>
+    </section>
+  </main>
+
+  <script src="woodenfield.js"></script>
+</body>
+</html>
